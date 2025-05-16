@@ -4,8 +4,6 @@
 
 A proposta é simples: permitir que você crie, edite e compartilhe notas de forma **intuitiva** e **em tempo real**, sem abrir mão da performance e da escalabilidade.
 
----
-
 ## 🚀 Tecnologias utilizadas
 
 O projeto está sendo desenvolvido com foco em **performance**, **componentização** e **manutenibilidade**. Atualmente, as principais tecnologias são:
@@ -14,8 +12,6 @@ O projeto está sendo desenvolvido com foco em **performance**, **componentizaç
 -   **React** – Biblioteca de construção de interfaces.
 -   **TypeScript** – Tipagem estática para maior segurança no desenvolvimento.
 -   **Tailwind CSS** – Estilização utilitária moderna e responsiva.
-
----
 
 ## 📦 Estrutura do projeto
 
@@ -26,6 +22,6 @@ src/
 ├── app/ # Rotas e páginas (App Router do Next.js)
 ├── interfaces/ # Componentes de UI, hooks e utils
 ├── domain/ # Entidades e regras de negócio
-├── application/ # Casos de uso (use-cases) e DTOs
+├── use-cases/ # Casos de uso
 ├── infrastructure/ # Implementações concretas (db, auth, etc)
 ```
