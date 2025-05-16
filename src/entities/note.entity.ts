@@ -1,25 +1,28 @@
-interface INoteEntity {
+import { IDirectoryEntity } from "./directory.entity";
+import { IUserEntity } from "./user.entity";
+
+export interface INoteEntity {
     title: string;
     description: string;
     content: string;
-    createdAt: string;
-    updatedAt: string;
-    owner: any; // Alterar para User
-    viewing: any[]; // Alterar para um array de User
+    createdAt: Date;
+    updatedAt: Date;
+    owner: IUserEntity;
+    viewing: Array<IUserEntity>;
     impressions: number;
-    parent: any; // Alterar para Repository
+    parent: IDirectoryEntity | undefined;
 }
 
 class NoteEntity implements INoteEntity {
     title: string;
     description: string;
     content: string;
-    createdAt: string;
-    updatedAt: string;
-    owner: any;
-    viewing: any[];
+    createdAt: Date;
+    updatedAt: Date;
+    owner: IUserEntity;
+    viewing: Array<IUserEntity>;
     impressions: number;
-    parent: any;
+    parent: IDirectoryEntity | undefined;
 
     constructor(noteProps: INoteEntity) {
         this.title = noteProps.title;

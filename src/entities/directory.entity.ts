@@ -1,6 +1,8 @@
-interface IDirectoryEntity {
+import { INoteEntity } from "./note.entity";
+
+export interface IDirectoryEntity {
     name: string;
-    childrens: Array<any | any>; // Alterar para Directory e Note
+    childrens: Array<INoteEntity | IDirectoryEntity>;
     createdAt: Date;
     updatedAt: Date;
 }
@@ -17,4 +19,10 @@ class DirectoryEntity implements IDirectoryEntity {
         this.createdAt = dirProps.createdAt;
         this.updatedAt = dirProps.updatedAt;
     }
+
+    addNote() {
+        
+    }
 }
+
+export default DirectoryEntity;

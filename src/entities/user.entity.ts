@@ -1,10 +1,12 @@
-interface IUserEntity {
+import { INoteEntity } from "./note.entity";
+
+export interface IUserEntity {
     id: string;
     username: string;
     displayName: string;
     email: string;
     password: string;
-    notes: Array<any>; // Alterar para um array de Note
+    notes: Array<INoteEntity>; // Alterar para um array de Note
     createdAt: Date;
     updatedAt: Date;
 }
@@ -15,7 +17,7 @@ class UserEntity implements IUserEntity {
     displayName: string;
     email: string;
     password: string;
-    notes: any[];
+    notes: INoteEntity[];
     createdAt: Date;
     updatedAt: Date;
 
@@ -30,11 +32,7 @@ class UserEntity implements IUserEntity {
         this.updatedAt = userProps.updatedAt;
     }
 
-    addNote () {
-
-    }
-
-
+    addNote() {}
 }
 
 export default UserEntity;
