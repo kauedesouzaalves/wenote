@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+    postgres:
+        image: postgres:latest
+        ports:
+            - "5433:5432"
+        environment:
+            - POSTGRES_USER=docker
+            - POSTGRES_PASSWORD=docker
+            - POSTGRES_DB=wenote
+        volumes:
+            - pg_data:/var/lib/postgresql/data
+
+volumes:
+    pg_data:
