@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "@/styles/globals.css";
+import HeroSection from "@/interfaces/components/HeroSection";
 
-const inter = Inter({
+const montserrat = Montserrat({
     subsets: ["latin"],
 });
 
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-BR">
-            <body className={`${inter.className} antialiased`}>{children}</body>
+            <body className={`${montserrat.className} antialiased`}>
+                <HeroSection></HeroSection>
+                {children}
+            </body>
         </html>
     );
 }

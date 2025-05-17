@@ -2,18 +2,27 @@ import "@/styles/index.css";
 
 export default function Home() {
     return (
-        <header className="flex items-center font-extrabold justify-between px-6 py-4 backdrop-blur-sm bg-white/2.5 h-16 border-b border-white/5">
-            <div className="text-2xl text-white">WeNote</div>
-            <nav className="flex items-center gap-5 text-1xl text-white">
-                <a href="#">Dashboard</a>
-                <a href="#">Login</a>
-                <a
-                    href="#"
-                    className="bg-white text-black px-3 py-1 rounded hover:bg-gray-100 transition"
-                >
-                    Get Started
-                </a>
-            </nav>
-        </header>
+        <>
+            <section className="hero-section pt-15">
+                <div className="max-w-[1024px] mx-auto">
+                    <div>
+                        <span className="hero-title text-5xl font-bold">
+                            Organize ideias,
+                            <br />
+                            colabore em tempo real.
+                        </span>
+                    </div>
+                    <br />
+                    <div>
+                        <span className="hero-subtitle text-1xl font-bold">
+                            Crie, compartilhe e edite anotações de forma simples
+                            e colaborativa. <br />
+                            Tudo em tempo real, com uma experiência fluida e
+                            moderna.
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </>
     );
 }

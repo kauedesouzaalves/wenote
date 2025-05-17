@@ -1,5 +1,3 @@
-export default function Register () {
-    return (
-        <h1>Teste</h1>
-    )
+export default function Register() {
+    return <h1>Register</h1>;
 }
