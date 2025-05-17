@@ -6,7 +6,7 @@ export interface IUserEntity {
     displayName: string;
     email: string;
     password: string;
-    notes: Array<INoteEntity>; // Alterar para um array de Note
+    notes: Array<INoteEntity>;
     createdAt: Date;
     updatedAt: Date;
 }
