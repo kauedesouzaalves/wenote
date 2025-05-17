@@ -1,7 +1,35 @@
 @import "tailwindcss";
 
+:root {
+    --primary-color: rgb(20, 19, 20);
+    --secondary-color: rgb(247, 236, 225);
+}
+
 body {
     font-family: var(--font-inter);
-    background-color: #141314;
-    color: #f7ece1;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.filled-button {
+    color: var(--primary-color);
+    background-color: rgba(247, 236, 225, 0.7);
+    border-radius: 0.375rem;
+    padding-inline: 0.75rem;
+    transition: all 0.2s;
+}
+
+.filled-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.ghost-button {
+    color: rgb(247, 236, 225, 0.7);
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.ghost-button:hover {
+    color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.1);
 }
