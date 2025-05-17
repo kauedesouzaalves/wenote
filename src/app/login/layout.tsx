@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "WeNote | Log in",
     description:
-        "WeNote é uma plataforma moderna de anotações colaborativas, desenvolvida para quem busca organização, produtividade e trabalho em equipe num só lugar. A WeNote permite que você crie, edite e compartilhe notas de forma intuitiva e em tempo real.",
+        "Acesse sua conta WeNote e continue suas anotações de onde parou. Colabore em tempo real com sua equipe e mantenha tudo organizado em um só lugar.",
 };
 
 export default function LoginLayout({
