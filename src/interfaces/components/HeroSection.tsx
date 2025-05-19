@@ -6,8 +6,8 @@ export default function HeroSection() {
                     <a href="/">
                         <img
                             className="h-8"
-                            src="/wenote_transparent.webp"
-                            alt="WeNote Logoc:\Users\Lunar\Downloads\favcon.ico"
+                            src="/wenote_icon.webp"
+                            alt="WeNote Logo"
                         />
                     </a>
                 </div>
