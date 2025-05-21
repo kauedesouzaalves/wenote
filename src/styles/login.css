@@ -1,0 +1,12 @@
+.container {
+    border: 1px solid rgba(247, 236, 225, 0.25);
+    border-radius: 0.375rem;
+}
+
+.form-input {
+    padding: 0.5rem 0.75rem;
+    outline: var(--secnodary-color);
+    border: 1px solid rgba(247, 236, 225, 0.25);
+    border-radius: 0.375rem;
+    width: 100%;
+}
