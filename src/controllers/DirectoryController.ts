@@ -1,5 +1,5 @@
 class DirectoryController {
-    constructor(private userUseCase: any) {}
+    constructor(private directoryUseCase: any) {}
 }
 
 export default DirectoryController;
