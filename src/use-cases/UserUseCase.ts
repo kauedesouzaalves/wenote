@@ -6,9 +6,7 @@ export interface IUserUseCase {}
 class UserUseCase implements IUserUseCase {
     constructor(private userRepository: IPostgreUserRepository) {}
 
-    createUser(userProps: IUserEntity) {
-        
-    }
+    createUser(userProps: IUserEntity) {}
 }
 
 export default UserUseCase;
