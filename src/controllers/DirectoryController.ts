@@ -1,5 +1,7 @@
+import { IDirectoryUseCase } from "@/use-cases/DirectoryUseCase";
+
 class DirectoryController {
-    constructor(private directoryUseCase: any) {}
+    constructor(private directoryUseCase: IDirectoryUseCase) {}
 }
 
 export default DirectoryController;

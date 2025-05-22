@@ -1,5 +1,7 @@
+import { INoteUseCase } from "@/use-cases/NoteUseCase";
+
 class NoteController {
-    constructor(private noteUseCase: any) {}
+    constructor(private noteUseCase: INoteUseCase) {}
 }
 
 export default NoteController;

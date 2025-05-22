@@ -1,5 +1,7 @@
+import { IUserUseCase } from "@/use-cases/UserUseCase";
+
 class UserController {
-    constructor(private userUseCase: any) {}
+    constructor(private userUseCase: IUserUseCase) {}
 }
 
 export default UserController;
