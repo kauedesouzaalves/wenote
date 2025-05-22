@@ -1,4 +1,4 @@
-import { INoteEntity } from "./note.entity";
+import { INoteEntity } from "./NoteEntity";
 
 export interface IUserEntity {
     id: string;
