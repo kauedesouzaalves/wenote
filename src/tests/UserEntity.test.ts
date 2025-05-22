@@ -1,4 +1,4 @@
-import UserEntity from "../entities/user.entity";
+import UserEntity from "../entities/UserEntity";
 
 describe("User Entity", () => {
     const user = new UserEntity({
