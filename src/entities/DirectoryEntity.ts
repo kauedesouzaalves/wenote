@@ -1,4 +1,4 @@
-import { INoteEntity } from "./note.entity";
+import { INoteEntity } from "./NoteEntity";
 
 export interface IDirectoryEntity {
     name: string;
@@ -20,9 +20,7 @@ class DirectoryEntity implements IDirectoryEntity {
         this.updatedAt = dirProps.updatedAt;
     }
 
-    addNote() {
-        
-    }
+    addNote() {}
 }
 
 export default DirectoryEntity;

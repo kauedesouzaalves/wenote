@@ -6,8 +6,8 @@ export default function HeroSection() {
                     <a href="/">
                         <img
                             className="h-8"
-                            src="/wenote_transparent.webp"
-                            alt="WeNote Logoc:\Users\Lunar\Downloads\favcon.ico"
+                            src="/wenote_icon.webp"
+                            alt="WeNote Logo"
                         />
                     </a>
                 </div>
@@ -16,16 +16,16 @@ export default function HeroSection() {
                         className="ghost-button px-3 py-1 rounded-md"
                         href="/dashboard"
                     >
-                        Dashboard
+                        Painel
                     </a>
                     <a
                         className="ghost-button px-3 py-1 rounded-md"
                         href="/login"
                     >
-                        Log in
+                        Login
                     </a>
                     <a href="/register" className="filled-button px-3 py-1">
-                        Sign up
+                        Registrar
                     </a>
                 </nav>
             </div>

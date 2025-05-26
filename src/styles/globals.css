@@ -17,6 +17,7 @@ body {
     border-radius: 0.375rem;
     padding-inline: 0.75rem;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 .filled-button:hover {
@@ -24,12 +25,13 @@ body {
 }
 
 .ghost-button {
-    color: rgb(247, 236, 225, 0.7);
+    color: rgba(247, 236, 225, 0.7);
     background-color: transparent;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 .ghost-button:hover {
     color: var(--secondary-color);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(247, 236, 225, 0.1);
 }

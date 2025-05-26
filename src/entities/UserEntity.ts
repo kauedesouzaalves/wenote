@@ -1,4 +1,4 @@
-import { INoteEntity } from "./note.entity";
+import { usernameValidator } from "./validators/user/usernameValidator";
 
 export interface IUserEntity {
     id: string;
@@ -6,7 +6,6 @@ export interface IUserEntity {
     displayName: string;
     email: string;
     password: string;
-    notes: Array<INoteEntity>;
     createdAt: Date;
     updatedAt: Date;
 }
@@ -17,22 +16,21 @@ class UserEntity implements IUserEntity {
     displayName: string;
     email: string;
     password: string;
-    notes: INoteEntity[];
     createdAt: Date;
     updatedAt: Date;
 
     constructor(userProps: IUserEntity) {
+        if (!usernameValidator(userProps.username))
+            throw Error("Username must be between 3 and 32 characters long.");
+
         this.id = userProps.id;
         this.username = userProps.username;
         this.displayName = userProps.displayName;
         this.email = userProps.email;
         this.password = userProps.password;
-        this.notes = userProps.notes;
         this.createdAt = userProps.createdAt;
         this.updatedAt = userProps.updatedAt;
     }
-
-    addNote() {}
 }
 
 export default UserEntity;

@@ -1,5 +1,5 @@
-import { IDirectoryEntity } from "./directory.entity";
-import { IUserEntity } from "./user.entity";
+import { IDirectoryEntity } from "./DirectoryEntity";
+import { IUserEntity } from "./UserEntity";
 
 export interface INoteEntity {
     title: string;

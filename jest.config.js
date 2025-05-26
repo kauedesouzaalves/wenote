@@ -3,6 +3,7 @@ module.exports = {
     preset: "ts-jest",
     testEnvironment: "node",
     roots: ["<rootDir>/src/tests"],
+    setupFiles: ["<rootDir>/setupJest.ts"],
     transform: {
         "^.+\\.tsx?$": "ts-jest",
     },

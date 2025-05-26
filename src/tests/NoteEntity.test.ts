@@ -1,5 +1,5 @@
-import NoteEntity from "../entities/note.entity";
-import UserEntity from "../entities/user.entity";
+import NoteEntity from "@/entities/NoteEntity";
+import UserEntity from "@/entities/UserEntity";
 
 describe("Note Entity", () => {
     const user = new UserEntity({
@@ -8,7 +8,6 @@ describe("Note Entity", () => {
         username: "kauedesouzaalves",
         email: "kaue@souza.com",
         password: "Kaue!@#",
-        notes: [],
         createdAt: new Date(),
         updatedAt: new Date(),
     });
