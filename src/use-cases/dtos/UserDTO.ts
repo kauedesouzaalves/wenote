@@ -14,11 +14,10 @@ export interface IUserDTO {
     toEntity(): IUserEntity;
 }
 
-class UserDTO {
+class UserDTO implements IUserDTO {
     constructor(private databaseUser: IUserDB) {}
 
     toEntity(): IUserEntity {
-        console.log("DATABASE USER:", this.databaseUser);
         const entity = new UserEntity({
             ...this.databaseUser,
             createdAt: new Date(this.databaseUser.created_at),
