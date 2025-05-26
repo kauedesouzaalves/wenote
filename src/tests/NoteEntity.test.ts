@@ -8,7 +8,6 @@ describe("Note Entity", () => {
         username: "kauedesouzaalves",
         email: "kaue@souza.com",
         password: "Kaue!@#",
-        notes: [],
         createdAt: new Date(),
         updatedAt: new Date(),
     });
