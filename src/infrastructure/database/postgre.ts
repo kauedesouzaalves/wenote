@@ -2,8 +2,8 @@ import "dotenv/config";
 
 import { Pool } from "pg";
 
-const db = new Pool({
-    connectionString: process.env.DATABASE_URL,
+const postgre = new Pool({
+    connectionString: process.env.POSTGRE_DATABASE_URL,
 });
 
-export default db;
+export default postgre;
