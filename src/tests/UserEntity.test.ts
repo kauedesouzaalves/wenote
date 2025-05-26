@@ -1,4 +1,4 @@
-import UserEntity from "../entities/UserEntity";
+import UserEntity from "@/entities/UserEntity";
 
 describe("User Entity", () => {
     const user = new UserEntity({
@@ -7,7 +7,6 @@ describe("User Entity", () => {
         username: "kauedesouzaalves",
         email: "kaue@souza.com",
         password: "Kaue!@#",
-        notes: [],
         createdAt: new Date(),
         updatedAt: new Date(),
     });
@@ -18,7 +17,6 @@ describe("User Entity", () => {
         expect(user.username).toBe("kauedesouzaalves");
         expect(user.email).toBe("kaue@souza.com");
         expect(user.password).toBe("Kaue!@#");
-        expect(user.notes).toEqual([]);
         expect(user.createdAt).toBeInstanceOf(Date);
         expect(user.updatedAt).toBeInstanceOf(Date);
     });
