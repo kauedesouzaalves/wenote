@@ -27,13 +27,9 @@ class UserUseCase implements IUserUseCase {
     }
 
     // async getUserById(id: string): Promise<IUserEntity> {
-    //     const user = await this.userRepository.getUserById(id);
+    // const user = await this.userRepository.getUserById(id);
 
-    //     // Hydrate object
-
-    //     UserDTO();
-
-    //     return user;
+    // return user;
     // }
 }
 

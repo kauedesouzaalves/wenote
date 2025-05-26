@@ -1,4 +1,4 @@
-import UserEntity, { IUserEntity } from "../../entities/UserEntity";
+import UserEntity, { IUserEntity } from "@/entities/UserEntity";
 
 export interface IUserDB {
     id: string;
