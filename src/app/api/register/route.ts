@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     const newUser = await userController.registerUser(userCredentials);
 
     return NextResponse.json({
-        message: "POST request successful",
+        message: "Requisição POST bem-sucedida",
         data: newUser,
     });
 }
